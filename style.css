@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+    background-color: #5d5d5d;
+
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+li{
+  scroll-behavior: smooth
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    color:rgb(255, 255, 255);
+    gap: 150px;
+    scroll-behavior: smooth
+}
+
+.home{
+    height: 80vh;
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+.botao{
+    text-decoration: none;
+    color: white;
+    scroll-behavior: smooth
+}
+
+.logo{
+    width: 150px;
+}
+
+.social{
+    width: 36px;
+
+}
+
+.h1home{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 90px;
+    color: #d9e1d7;
+}
+
+.h2home{
+    color: #d9e1d7;
+}
+
+.quemsomos{
+    color: #5d5d5d;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#agenda{
+    background-color:#d9e1d7;
+}
+
+.sobre{
+    display: flex;
+    justify-content: space-between;
+    background-color: #5d5d5d;
+    padding: 50px;
+    text-align: center;
+    color: #d9e1d7;
+}
+
+.nosso_local {
+    width: 50%;
+}
+
+.quadras, .localizacao{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer{
+    background-color: #d9e1d7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.iconeadm{
+    width: 150px;
+}
+
+.botaobaixo, ul, .botao_footer{
+    text-decoration: none;
+    text-align: center;
+    list-style: none;
+    color: #5d5d5d;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.logo2{
+    width: 80px;
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #5d5d5d;
+}
+
+
+
+.agenda  {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+  padding: 40px;
+}
+
+.agenda h2 {
+  text-align: center;
+  letter-spacing: 1px;
+  color: #333;
+}
+
+.left, .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Calendário */
+.calendar {
+  background: #f4f4f4;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar-header button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.calendar-body {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  text-align: center;
+}
+
+.day {
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.day:hover {
+  background: #d1d5db;
+}
+
+.day.selected {
+  background: #2563eb;
+  color: white;
+}
+
+.day.disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Quadras */
+.quadras {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.quadra-btn {
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 25px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.quadra-btn:hover, .quadra-btn.active {
+  background-color: #2563eb;
+}
+
+/* Horários */
+.horarios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.horario {
+  background-color: #444;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.horario:hover {
+  background-color: #2563eb;
+}
+
+.horario.reservado {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 320px;
+  text-align: center;
+}
+
+.modal-content input {
+  width: 80%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.botoes button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.botoes button:first-child {
+  background-color: #2563eb;
+  color: white;
+}
+
+.botoes button:last-child {
+  background-color: #aaa;
+  color: white;
+}
+
+
+@media (max-width: 600px) {
+    .header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .logo{
+        width: 100px;
+    }
+    .menu {
+        gap: 20px;
+    }
+    .sobre {
+        flex-direction: column;
+    }
+}
+

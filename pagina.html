@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATCH UP</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo pequeno/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/logo pequeno/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/logo pequeno/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="home" class="header"> 
+        <img class="logo" src="/logo/LOGO1.png">
+        <nav>
+            <ul class="menu">
+                <li><a class="botao" href="#home">HOME</a></li>
+                <li><a class="botao" href="#agenda">AGENDA</a></li>
+                <li><a class="botao" href="#sobre"> SOBRE</a></li>
+            </ul>
+        </nav>
+        
+        <a href="https://www.google.com.br/maps" target="_blank"><img class="iconeadm" src="/logo/ADM.png"></a>
+
+    </header>
+    <div class="home">
+        <div>
+            <h1 class="h1home">AGENDE SUA QUADRA <br> DE MANEIRA FÁCIL <br> E RÁPIDA</h1>
+            <a class="h2home" href="#agenda">AGENDE AQUI SEU HORÁRIO</a>
+        </div>
+        <img src="/logo/BANDEIRA.png" alt="">
+        
+    </div >
+    
+    <div id="agenda1" class="agenda1"></div>
+    
+    <div id="agenda" class="agenda">
+        <div class="left">
+            <h2>DATAS DISPONÍVEIS</h2>
+            <div class="calendar">
+                <div class="calendar-header">
+                    <button id="prev-month">◀</button>
+                    <h3 id="month-year"></h3>
+                    <button id="next-month">▶</button>
+                </div>
+                <div class="calendar-body" id="calendar"></div>
+            </div>
+
+            <div class="quadras">
+                <button class="quadra-btn" data-quadra="society">🌿 SOCIETY</button>
+                <button class="quadra-btn" data-quadra="futsal">⚽ FUTSAL</button>
+            </div>
+        </div>
+
+        <div class="right">
+            <h2>HORÁRIOS DISPONÍVEIS</h2>
+            <div class="horarios" id="horarios"></div>
+        </div>
+
+        <!-- Modal -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <h3>Confirmar Reserva</h3>
+                <p id="resumo"></p>
+                <form id="formReserva">
+                    <input type="text" id="nome" placeholder="Nome completo" required>
+                    <input type="text" id="cpf" placeholder="CPF" maxlength="14" required>
+                    <input type="text" id="telefone" placeholder="Telefone" maxlength="15" required>
+                    <div class="botoes">
+                        <button type="submit">Confirmar</button>
+                        <button type="button" id="cancelar">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="sobre" class="sobre">
+        <div class="nosso_local">
+            <h2>NOSSO LOCAL</h2>
+            <p>O MatchUp oferece uma estrutura completa para lazer e esportes. Nosso espaço conta com quadras modernas e bem cuidadas, ideais para a prática de futebol, vôlei e outras modalidades. Além disso, dispomos de uma área com churrasqueira perfeita para confraternizações, aniversários e eventos entre amigos ou família. O ambiente é seguro, confortável e pensado para proporcionar momentos de diversão e relaxamento para todos os visitantes.</p>
+            <p>Alfredo sate alan, 1065</p>
+            <h2>SEG A SAB 08:00 as 00:00h <h2>
+            DOM E FERIADOS 13:00 as 22:00h</p>
+            <div class="quadras">
+                <div class="quadra_futsal">
+                    <h3>Futsal</h3>
+                    <img class="imgquadra" src="/logo/QUADRA FUTSAL.png">
+                    <figcaption>Dimensões da quadra: 40m x 20m<br>Madeira</figcaption>
+                </div>
+                <div class="quadra_society">
+                    <h3>Society</h3>
+                    <img class="imgquadra" src="/logo/QUADRA SOCIETY.png">
+                    <figcaption>Dimensões da quadra: 40m x 20m<br>Grama sintética</figcaption>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2>Localização</h2>
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.490634622634!2d-46.66218568502187!3d-23.554259084686736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c6e6f5b8b7%3A0x9a3e7c4c8e4e4e4e!2sAlfredo%20Sate%20Alan%2C%201065%20-%20Vila%20Madalena%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005455-001!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+        <img class="logo2" src="/logo/LOGO.png">
+        <p class="quemsomos">auxiliamos no agendamento <br> online de quadras <br> esportivas, facilitando a <br> gestão e a reserva de <br> horários com praticidade e <br>eficiência</p>
+        </div>
+        
+        <div class="botaobaixo">
+            <nav>
+                <ul>
+                    <li><a class="botao_footer" href="#home">home</a></li>
+                    <li><a class="botao_footer" href="#agenda1">agenda</a></li>
+                    <li><a class="botao_footer" href="#sobre"> sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="redes">
+            <a href="https://pt-br.facebook.com/" target="_blank"> <img class="social" src="/logo/ICON FACEBOOK.png"></a>
+            <a href="https://www.instagram.com/" target="_blank"> <img class="social" src="/logo/ICON INSTAGRAM.png"></a>
+            <a href="https://web.telegram.org/" target="_blank"> <img class="social" src="/logo/ICON TELEGRAM.png"></a>
+        </div>
+    </footer>
+
+      <script src="script.js"></script>
+</body>
+</html>
